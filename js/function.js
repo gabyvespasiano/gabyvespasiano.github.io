@@ -12,7 +12,7 @@ navButton.addEventListener('click', () => {
   }
 
 });
-
+//aqui cargamos todos los enlaces de los certificados
 const enlaces ={
   "html5-fundamentos-web": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/61068",
   "introduccion-al-paradigma-de-objetos": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58100",
@@ -21,7 +21,6 @@ const enlaces ={
   "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903"
 }
 const buttons = document.querySelectorAll("button");
-
 
 buttons.forEach(button => {
   button.addEventListener("click", e => {
