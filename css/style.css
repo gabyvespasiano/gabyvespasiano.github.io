@@ -133,7 +133,7 @@ section ul li h3 {
   background-color: var(--c_blanco);
   color: var(--c_negro);
 }
-.proyectos{
+.contenedor{
   width: 100%;
  display: grid;
  grid-template-columns: repeat(auto-fit,300px);
@@ -226,46 +226,10 @@ footer {
   line-height: 1.5;
   max-width: 100%;
 }
-.cv-page{
-  width: 760px;
-  padding: 80px 80px 60px;
-  margin: 80px auto;
-  background-color: #fff;
-  box-shadow: 2px 2px 1px #606060;
-}
 
-.cv-header-foto{
-  border-radius: 2px;
-  height: 128px;
-  margin-right: 20px;
+.pdf{
+  height: 99vh;
 }
-.cv-header-texto{
-  flex: 1;
-}
-.cv-dentro{
-  display: flex;
-}
-.cv h1{
-  margin: 0;
-}
-.cv-header-nombre{
-  display: block;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1;
-  margin-bottom: 5px;
-  color: #BB1E1E;
-}
-.cv-header-titulo{
-  display:block;
-  text-transform:none;
-  font-size:24px;
-  font-weight:300;
-  margin-bottom:5px;
-  color:var(--c_negro)
-}
-
 /*RESPONSIVE*/
 @media (max-width: 767px) {
   header .logo {
@@ -345,27 +309,6 @@ footer {
     
   }
 
-
-  .cv-page{
-    width:auto;
-    margin:0 auto;
-    padding:20px;
-  }
-  .cv-dentro{
-    display:block;
-    text-align:center;
-  }
-  .cv-dentro .cv-header-foto{
-    float:none;
-    margin-bottom:15px;
-    margin-right: 0px;
-  }
-  .cv-dentro .cv-header-foto img{
-    border-radius:6px;
-  }
-  .cv-header-texto{
-    flex: 1;
-  }
   
 
 }

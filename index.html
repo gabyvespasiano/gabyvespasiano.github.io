@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/imagenes/image.png">
-  <title>Portfolio de Desarrollador Front-End</title>
+  <title>Portafolio Gabriel Vespasiano</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 </header>
   <main>
     <section id="inicio">
-      <h1>Bienvenidos a mi portfolio</h1>
+      <h1>Bienvenidos a mi portafolio</h1>
       <div class="inicio">
         <img src="/imagenes/avatar.png" class="foto" alt="foto"></li>
         
@@ -53,7 +53,7 @@
           
           <section id="proyectos">
             <h2>Proyectos</h2>
-            <div class="proyectos">
+            <div class="contenedor">
             <article class="card">
               <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
               <!-- content--article-starts-here -->
@@ -107,7 +107,7 @@
           </section>
           <section id="certificaciones">
       <h2>Certificaciones</h2>
-      <div class="proyectos">
+      <div class="contenedor">
         <article class="card cert">
           <img src="imagenes/certificaciones/html5-fundamentos-web.jpeg" width="300" alt="previsualizacion del proyecto" />
           <h3>HTML5: Fundamentos Web</h3>
@@ -141,15 +141,15 @@
     <section id="contacto">
       <h2>Contacto</h2>
       <div class="contenido">
-      <p class="justify">Puedes ponerte en contacto conmigo a través de mi correo electrónico [correo electrónico] o a través del siguiente formulario de contacto:</p>
-      <form class="contacto" action="" method="post">
+      <p class="justify">Puedes ponerte en contacto conmigo a través de mi correo electrónico gabyvespasiano@gmail.com o a través del siguiente formulario de contacto:</p>
+      <form class="contacto" action="mailto:gabyvespasiano@gmail.com?subject=enviado desde el formulario de contacto" method="post" enctype="text/plain">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
         <label for="correo">Correo electrónico:</label>
         <input type="text" id="correo" name="correo">
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje"></textarea>
-        <input type="submit" class="boton" value="Enviar">
+        <input type="submit" class="boton mailto" value="Enviar">
       </form> 
     </div>
     </section>
