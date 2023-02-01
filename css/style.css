@@ -1,11 +1,11 @@
 @charset 'UTF-8';
 :root{
-  --c_celeste: #1c6e8c;
+  --c_violeta: #233057;
+  --c_celeste: #677194;
   --c_celeste_oscuro: #274156;
-  --c_blanco:          #fbfcff;
-  --c_negro:           #605856;
-
-  --c_btncert:        #0C31E1;
+  --c_blanco: #fbfcff;
+  --c_negro: #605856;
+  --c_btncert: #3b3d8f;
 }
 /*
 Paleta de colores
@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  background-color: var(--c_celeste); 
+  background-color: var(--c_violeta); 
   color: var(--c_blanco);
   font-family: 'Fredoka One', cursive;
   align-items:center;
