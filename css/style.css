@@ -164,6 +164,10 @@ section ul li h3 {
   display: flex;
   justify-content: space-between;
 }
+.card a{
+  color: blue;
+  font-weight: bold;
+}
 
 section ul li p {
   color: #666;
