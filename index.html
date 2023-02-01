@@ -14,7 +14,7 @@
     <button id="nav-button"class="nav-button"><i id="icono" class="fa-solid fa-bars"></i></button>
     <nav>
     <div class="menu-circle"></div>
-        <div class="menu">
+    <div class="menu">
       <ul id="nav" class="navr">
         <li><a class="navlink" href="#inicio">Inicio</a></li>
         <li><a class="navlink" href="#habilidades">Habilidades</a></li>
@@ -22,36 +22,90 @@
         <li><a class="navlink" href="#contacto">Contacto</a></li>
         <li><a class="navlink" href="./cv.html" target="_blank">CV</a></li>
       </ul>
-    
+      
     </div>
-    </nav>
-  </header>
+  </nav>
+</header>
   <main>
     <section id="inicio">
       <h1>Bienvenidos a mi portfolio</h1>
       <div class="inicio">
-    <img src="https://randomuser.me/api/portraits/men/51.jpg" class="foto" alt="foto"></li>
-    <p class="respon">Hola, mi nombre es Scott Douglas y soy un programador front-end en busca de oportunidades de trabajo. </p>
-    <p class="desktop">Hola, mi nombre es Scott Douglas y soy un programador front-end en busca de oportunidades de trabajo. Mi pasión por la tecnología y el diseño me llevó a especializarme en el desarrollo de aplicaciones web y aplicaciones móviles. Durante mi formación, he adquirido habilidades técnicas en lenguajes de programación como HTML, CSS y JavaScript, así como en frameworks como React y Angular. También tengo experiencia en el uso de herramientas de diseño como Adobe Creative Suite. Estoy emocionado de aplicar mis habilidades y conocimientos en un ambiente de trabajo y continuar aprendiendo y creciendo como programador front-end.</p>
-     </div>
+        <img src="/imagenes/avatar.png" class="foto" alt="foto"></li>
+        
+        <p class="desktop">Hola, mi nombre es Gabriel Vespasiano y tengo 24 años. Actualmente estoy estudiando para convertirme en un desarrollador full stack.He estado programando de forma autodidacta desde los 16 años y sigo aprendiendo cada día. Estoy emocionado de seguir desarrollando mis habilidades y creciendo en mi carrera como desarrollador. ¡Gracias por su tiempo!</p>
+      </div>
     </section>
     <section id="habilidades">
       <h2>Habilidades</h2>
       <ul>
         
         <li class="bold imagenesH">HTML <br>
-        <img src="imagenes/html.png"  alt="logo de HTML"></li>
-
-        <li class="bold imagenesH">CSS <br>
-        <img src="imagenes/css.png"  alt="logo de CSS"></li>
-
-        <li class="bold imagenesH">JavaScript <br>
-        <img src="imagenes/js.png"  alt="logo de JavaScript"></li>      
-        
-      </ul>
-    </section>
-
-    <section id="certificaciones">
+          <img src="imagenes/html.png"  alt="logo de HTML"></li>
+          
+          <li class="bold imagenesH">CSS <br>
+            <img src="imagenes/css.png"  alt="logo de CSS"></li>
+            
+            <li class="bold imagenesH">JavaScript <br>
+              <img src="imagenes/js.png"  alt="logo de JavaScript"></li>      
+              
+            </ul>
+          </section>
+          
+          <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos">
+            <article class="card">
+              <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
+              <!-- content--article-starts-here -->
+              <article class="content">
+                <h3>TA TE TI (Online)</h3>
+                <section>  
+                  <a href="http://gabyvespa.ar/tateti" rel="nofollow" target="_blank">Probar</a>
+                  <a href="https://github.com/gabyvespasiano/tateti-online" rel="nofollow" target="_blank">GitHub</a>
+                </section>
+          
+                <p>
+                  se realizo el famoso juego de TATETI (3 en linea) online,
+                  el juego utiliza una base de datos en Mysql para realizar la conexion entre usuarios, la cual se consulta mendiante PHP y este es llamado por el javascript
+                </p>
+                <p class="low">stack utilizado: HTML, CSS, JS, PHP, MySQL</p>
+              </article>
+              <!-- content--article-ends-here -->
+            </article>
+          
+            <article class="card">
+              <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
+              <!-- content--article-starts-here -->
+              <article class="content">
+                <h3>Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                  praesentium, quod sapiente a illo repellat odio rem perferendis
+                  beatae facere delectus quae impedit voluptates consectetur possimus
+                  fugit, ipsa, sed corrupti.
+                </p>
+              </article>
+              <!-- content--article-ends-here -->
+            </article>
+          
+            <article class="card">
+              <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
+              <!-- content--article-starts-here -->
+              <article class="content">
+                <h3>Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                  praesentium, quod sapiente a illo repellat odio rem perferendis
+                  beatae facere delectus quae impedit voluptates consectetur possimus
+                  fugit, ipsa, sed corrupti.
+                </p>
+              </article>
+              <!-- content--article-ends-here -->
+            </article>
+            
+          </div>
+          </section>
+          <section id="certificaciones">
       <h2>Certificaciones</h2>
       <div class="proyectos">
         <article class="card cert">
@@ -84,60 +138,6 @@
 
     </section>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="proyectos">
-      <article class="card">
-        <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
-        <!-- content--article-starts-here -->
-        <article class="content">
-          <h3>TA TE TI (Online)</h3>
-          <section>  
-            <a href="http://gabyvespa.ar/tateti" rel="nofollow" target="_blank">Probar</a>
-            <a href="https://github.com/gabyvespasiano/tateti-online" rel="nofollow" target="_blank">GitHub</a>
-          </section>
-
-          <p>
-            se realizo el famoso juego de TATETI (3 en linea) online,
-            el juego utiliza una base de datos en Mysql para realizar la conexion entre usuarios, la cual se consulta mendiante PHP y este es llamado por el javascript
-          </p>
-          <p class="low">stack utilizado: HTML, CSS, JS, PHP, MySQL</p>
-        </article>
-        <!-- content--article-ends-here -->
-      </article>
-
-      <article class="card">
-        <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
-        <!-- content--article-starts-here -->
-        <article class="content">
-          <h3>Title</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            praesentium, quod sapiente a illo repellat odio rem perferendis
-            beatae facere delectus quae impedit voluptates consectetur possimus
-            fugit, ipsa, sed corrupti.
-          </p>
-        </article>
-        <!-- content--article-ends-here -->
-      </article>
-
-      <article class="card">
-        <img src="/imagenes/proyectos/tateti/preview.png" width="300px" alt="previsualizacion del proyecto" />
-        <!-- content--article-starts-here -->
-        <article class="content">
-          <h3>Title</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            praesentium, quod sapiente a illo repellat odio rem perferendis
-            beatae facere delectus quae impedit voluptates consectetur possimus
-            fugit, ipsa, sed corrupti.
-          </p>
-        </article>
-        <!-- content--article-ends-here -->
-      </article>
-      
-   </div>
-    </section>
     <section id="contacto">
       <h2>Contacto</h2>
       <div class="contenido">

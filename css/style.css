@@ -72,7 +72,10 @@ main {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
 }
-
+.inicio{
+  display: flex;
+  text-align: left;
+}
 section {
   background-color: var(--c_blanco);
   color: #333;
@@ -210,9 +213,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
-.respon{
-  display: none;
-}
+
 /* * {
   outline: 1px solid red;
 }*/
@@ -333,12 +334,6 @@ footer {
 
     
   }
-  .desktop{
-    display: none;
-  }
-  .respon{
-    display: block;
-  }
   .navlink{
     padding: 0.20rem 1rem;
   }
@@ -430,10 +425,7 @@ nav.visible {
   border:3px solid var(--c_negro);
   margin-left: 10px;
 }
-.inicio{
-  display: flex;
-  text-align: justify;
-}
+
 .contenido{
   margin-left: 10px;
   margin-right: 10px;
