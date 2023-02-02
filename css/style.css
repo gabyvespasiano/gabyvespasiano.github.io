@@ -234,6 +234,38 @@ footer {
 .pdf{
   height: 99vh;
 }
+
+nav.visible {
+  display: block;
+  
+}
+
+.imagenesH{
+  transition: all;
+  margin-top: 17px;
+  transition: 0.5s;
+}
+.imagenesH:hover{
+  transform: scale(1.1) rotate(15deg);
+
+}
+.foto{
+  border-radius: 100%;
+  float: left;
+  margin-right: 20px;
+  max-height: 128px;
+  border:3px solid var(--c_negro);
+  margin-left: 10px;
+}
+
+.contenido{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.justify{
+  text-align: justify;
+}
+
 /*RESPONSIVE*/
 @media (max-width: 767px) {
   header .logo {
@@ -257,7 +289,7 @@ footer {
   }
   header .nav-button {
     display: block;
-    background-color: #25A0D0;
+    background-color: var(--c_violeta);
     color: var(--c_blanco);
     border: none;
     padding: 10px;
@@ -296,7 +328,7 @@ footer {
     top: -250px;
     z-index: 0;
     position: fixed;
-    background-color: #25A0D0;
+    background-color: var(--c_violeta);
     border-radius: 500%;
     animation: anim-jelly 0.8s linear forwards;
 
@@ -304,6 +336,17 @@ footer {
   }
   .navlink{
     padding: 0.20rem 1rem;
+  }
+  #inicio{
+    margin-top: 1em;
+  }
+  .foto{
+    max-height: unset;
+    margin: auto;
+    max-width: 75vw;
+  }
+  .inicio{
+    flex-direction: column
   }
   /*cv*/
   .cv{
@@ -349,34 +392,4 @@ footer {
   93.333333% { -webkit-transform: matrix3d(1.00042, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00042, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   96.666667% { -webkit-transform: matrix3d(1.00056, 0, 0, 0, 0, 1.00056, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.00056, 0, 0, 0, 0, 1.00056, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);} 
-}
-nav.visible {
-  display: block;
-  
-}
-
-.imagenesH{
-  transition: all;
-  margin-top: 17px;
-  transition: 0.5s;
-}
-.imagenesH:hover{
-  transform: scale(1.1) rotate(15deg);
-
-}
-.foto{
-  border-radius: 100%;
-  float: left;
-  margin-right: 20px;
-  max-height: 128px;
-  border:3px solid var(--c_negro);
-  margin-left: 10px;
-}
-
-.contenido{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.justify{
-  text-align: justify;
 }
