@@ -26,7 +26,9 @@ buttons.forEach(button => {
   button.addEventListener("click", e => {
     const buttonClass = e.target.className;
     let clase = buttonClass.replace("btncertificados ","")
-    window.open(enlaces[clase])
+    if (enlaces[clase] != undefined){
+      window.open(enlaces[clase])
+    }
 
   });
 });
