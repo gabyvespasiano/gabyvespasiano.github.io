@@ -168,6 +168,10 @@ section ul li h3 {
   color: blue;
   font-weight: bold;
 }
+.card picture{
+  height: 231.56px;
+  display: inline-flex;
+}
 
 section ul li p {
   color: #666;

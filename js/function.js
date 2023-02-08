@@ -18,7 +18,8 @@ const enlaces ={
   "introduccion-al-paradigma-de-objetos": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58100",
   "javascript-desde-cero": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58610",
   "python-programming": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/56828",
-  "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903"
+  "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903",
+  "primeros-pasos-del-desarrollo-frontend": "https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf"
 }
 const buttons = document.querySelectorAll("button");
 
