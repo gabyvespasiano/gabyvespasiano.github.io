@@ -19,7 +19,9 @@ const enlaces ={
   "javascript-desde-cero": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58610",
   "python-programming": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/56828",
   "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903",
-  "primeros-pasos-del-desarrollo-frontend": "https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf"
+  "primeros-pasos-del-desarrollo-frontend": "https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf",
+  "arg-programa": "https://seprogramar.inti.gob.ar/inti/certificates/verify/NeN0HBk_Sc2cooW3"
+
 }
 const buttons = document.querySelectorAll("button");
 
