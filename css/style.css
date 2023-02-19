@@ -40,7 +40,6 @@ header nav {
 }
 .navlink{
   padding: 1rem 1rem;
-  color: color: var(--c_blanco);
 }
 .navr .active{
   color: gray;
