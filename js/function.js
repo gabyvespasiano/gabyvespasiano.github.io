@@ -19,6 +19,7 @@ const enlaces ={
   "javascript-desde-cero": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58610",
   "python-programming": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/56828",
   "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903",
+  "Protocolo-HTTPS": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/30344",
   "primeros-pasos-del-desarrollo-frontend": "https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf",
   "arg-programa": "https://seprogramar.inti.gob.ar/inti/certificates/verify/NeN0HBk_Sc2cooW3"
 
@@ -34,4 +35,56 @@ buttons.forEach(button => {
     }
 
   });
+});
+
+// Obtiene todos los enlaces del navbar
+const navLinks = document.querySelectorAll('.navr a');
+
+// Agrega un listener de clic a cada enlace
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    const href = link.getAttribute('href'); // Obtiene el valor del atributo href
+    if (href.includes("#")){
+    e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    const target = document.querySelector(href); // Obtiene el elemento de destino
+
+    if (target) {
+      // Calcula la posición actual del scroll y la posición del destino
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetTop = target.getBoundingClientRect().top + scrollTop;
+
+      // Realiza el desplazamiento
+      window.scrollTo({
+        top: targetTop - 60, // Ajusta este valor según lo necesites
+        behavior: 'smooth' // Hace que el desplazamiento sea suave
+      });
+    }
+  }});
+});
+
+
+// Agrega un listener de scroll a la ventana
+window.addEventListener('scroll', () => {
+  // Obtiene la posición actual del scroll
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Recorre todos los enlaces del navbar
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href'); // Obtiene el valor del atributo href
+    if (href.includes("#")){
+    const target = document.querySelector(href); // Obtiene el elemento de destino correspondiente
+
+    if (target) {
+      // Calcula la posición del destino y el tamaño de la ventana
+      const targetTop = target.getBoundingClientRect().top + currentScroll;
+      const windowHeight = window.innerHeight;
+
+      // Agrega o elimina la clase 'active' según corresponda
+      if (currentScroll >= targetTop - windowHeight / 2 && currentScroll < targetTop + target.offsetHeight - windowHeight / 2) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    }
+  }});
 });

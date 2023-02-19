@@ -15,7 +15,6 @@ blanco:          fbfcff
 negro:           605856
 */
 
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -30,6 +29,8 @@ header {
   align-items:center;
   justify-content: space-between;
   padding: 20px;
+  width: 100vw;
+  position: fixed;
 }
 header nav {
   max-width: 1200px;
@@ -39,13 +40,18 @@ header nav {
 }
 .navlink{
   padding: 1rem 1rem;
+  color: color: var(--c_blanco);
 }
+.navr .active{
+  color: gray;
+}
+
 
 header .nav-button {
   display: none;
 }
 
-a:hover, a:focus {
+a:hover {
   background-size: 100% 2px;
   color: var(--c_celeste_oscuro);
   text-decoration: underline;
@@ -71,6 +77,8 @@ main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
+
+  padding-top: 60px;
 }
 .inicio{
   display: flex;
@@ -317,7 +325,7 @@ nav.visible {
   header nav ul li{
     text-align: center;
     font-size: 20px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     
   
   }
@@ -339,7 +347,7 @@ nav.visible {
     
   }
   .navlink{
-    padding: 0.20rem 1rem;
+    padding: 0.10rem 1rem;
   }
   #inicio{
     margin-top: 1em;
