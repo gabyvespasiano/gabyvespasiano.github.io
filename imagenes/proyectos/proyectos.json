@@ -1,0 +1,35 @@
+[
+    {
+        "nombre": "TA TE TI (Online)",
+        "descripcion": "se realizo el famoso juego de TATETI (3 en linea) online, el juego utiliza una base de datos en Mysql para realizar la conexion entre usuarios, la cual se consulta mendiante PHP y este es llamado por el javascript",
+        "stack": "HTML, CSS, JS, PHP, MySQL",
+        "imagen": "/imagenes/proyectos/tateti/preview.png",
+        "test": "http://gabyvespa.ar/tateti",
+        "github": "https://github.com/gabyvespasiano/tateti-online"
+    },
+    {
+        "nombre": "Snake / Vivorita",
+        "descripcion": "Se ha hecho una versión del clásico juego Snake con algunos toques innovadores que aumentan la jugabilidad y lo hacen mucho más interesante. ¿Te vas a perder la oportunidad de probarlo?",
+        "stack": "HTML, CSS, JS",
+        "imagen": "/imagenes/proyectos/snake/preview.png",
+        "test": "https://gabyvespasiano.github.io/snake-vivorita/",
+        "github": "https://github.com/gabyvespasiano/snake-vivorita"
+    },
+    {
+        "nombre": "chia plot calculator",
+        "descripcion": "La calculadora de Chia Coin es una herramienta para optimizar almacenamiento y energía al minar criptomonedas. Calcula la cantidad de plots que entran en un disco y la combinación óptima para reducir consumo de energía. Esencial para maximizar resultados.",
+        "stack": "HTML, CSS, JS",
+        "imagen": "/imagenes/proyectos/chia-calculator/preview.png",
+        "test": "https://gabyvespasiano.github.io/chia-plot-calculator/",
+        "github": "https://github.com/gabyvespasiano/chia-plot-calculator"
+    },
+    {
+        "nombre": "css sort",
+        "descripcion": "Esta aplicación le permite ingresar el código HTML y CSS de su sitio web y organizar automáticamente el CSS en base a los tags HTML, las clases y las ID.",
+        "stack": "HTML, CSS, JS",
+        "imagen": "/imagenes/proyectos/css-sort/preview.png",
+        "test": "https://gabyvespasiano.github.io/css-sorting/",
+        "github": "https://github.com/gabyvespasiano/css-sorting"
+    }
+
+]

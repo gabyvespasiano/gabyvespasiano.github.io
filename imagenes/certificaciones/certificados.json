@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "HTML5: Fundamentos Web",
+        "imagen": "imagenes/certificaciones/html5-fundamentos-web.jpeg",
+        "enlace":"https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/61068"
+    },
+    {
+        "nombre": "Introducción al Paradigma de Objetos",
+        "imagen": "imagenes/certificaciones/introduccion-al-paradigma-de-objetos.jpeg",
+        "enlace":"https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58100"
+        
+    },
+    {
+        "nombre": "Javascript desde cero",
+        "imagen": "imagenes/certificaciones/javascript-desde-cero.jpeg",
+        "enlace":"https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58610"
+    },
+    {
+        "nombre": "Python Programming",
+        "imagen": "imagenes/certificaciones/python-programming.jpeg",
+        "enlace":"https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/56828"
+    },
+    {
+        "nombre": "Software Tester QA",
+        "imagen": "imagenes/certificaciones/software-tester-QA.jpeg",
+        "enlace":"https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903"
+    },
+    {
+        "nombre": "Protocolo HTTPS",
+        "imagen": "imagenes/certificaciones/Protocolo-HTTPS.jpeg",
+        "enlace":"https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/30344"
+    },
+    {
+        "nombre": "Primeros pasos del desarrollo frontend",
+        "imagen": "imagenes/certificaciones/primeros-pasos-del-desarrollo-frontend.jpg",
+        "enlace":"https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf"
+    }
+    ,
+    {
+        "nombre": "Argentina programa 4.0",
+        "imagen": "imagenes/certificaciones/arg-programa.jpg",
+        "enlace":"https://seprogramar.inti.gob.ar/inti/certificates/verify/NeN0HBk_Sc2cooW3"
+    }
+]

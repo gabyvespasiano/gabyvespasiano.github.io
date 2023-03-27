@@ -13,29 +13,29 @@ navButton.addEventListener('click', () => {
 
 });
 //aqui cargamos todos los enlaces de los certificados
-const enlaces ={
-  "html5-fundamentos-web": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/61068",
-  "introduccion-al-paradigma-de-objetos": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58100",
-  "javascript-desde-cero": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58610",
-  "python-programming": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/56828",
-  "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903",
-  "Protocolo-HTTPS": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/30344",
-  "primeros-pasos-del-desarrollo-frontend": "https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf",
-  "arg-programa": "https://seprogramar.inti.gob.ar/inti/certificates/verify/NeN0HBk_Sc2cooW3"
+// const enlaces ={
+//   "html5-fundamentos-web": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/61068",
+//   "introduccion-al-paradigma-de-objetos": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58100",
+//   "javascript-desde-cero": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/58610",
+//   "python-programming": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/56828",
+//   "software-tester-QA": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/55903",
+//   "Protocolo-HTTPS": "https://api.educacionit.com/pdf/certificados/gabriel-vespasiano-767377/30344",
+//   "primeros-pasos-del-desarrollo-frontend": "https://gabyvespa.ar/imagenes/certificaciones/certificate-download.pdf",
+//   "arg-programa": "https://seprogramar.inti.gob.ar/inti/certificates/verify/NeN0HBk_Sc2cooW3"
 
-}
-const buttons = document.querySelectorAll("button");
+// }
+// const buttons = document.querySelectorAll("button");
 
-buttons.forEach(button => {
-  button.addEventListener("click", e => {
-    const buttonClass = e.target.className;
-    let clase = buttonClass.replace("btncertificados ","")
-    if (enlaces[clase] != undefined){
-      window.open(enlaces[clase])
-    }
+// buttons.forEach(button => {
+//   button.addEventListener("click", e => {
+//     const buttonClass = e.target.className;
+//     let clase = buttonClass.replace("btncertificados ","")
+//     if (enlaces[clase] != undefined){
+//       window.open(enlaces[clase])
+//     }
 
-  });
-});
+//   });
+// });
 
 // Obtiene todos los enlaces del navbar
 const navLinks = document.querySelectorAll('.navr a');
@@ -88,3 +88,41 @@ window.addEventListener('scroll', () => {
     }
   }});
 });
+fetch('/imagenes/proyectos/proyectos.json')
+  .then(response => response.json())
+  .then(proyectos => {
+    const proyectosHTML = proyectos.map(proyecto => `
+    <article class="card">
+              <img src="${proyecto.imagen}" width="300px" alt="${proyecto.nombre}" />
+              
+              <article class="content">
+                <h3>${proyecto.nombre}</h3>
+                <section>  
+                  <a href="${proyecto.test}" rel="nofollow" target="_blank">Probar</a>
+                  <a href="${proyecto.github}" rel="nofollow" target="_blank">GitHub</a>
+                </section>
+          
+                <p>
+                ${proyecto.descripcion}
+                </p>
+                <p class="low">stack utilizado: ${proyecto.stack}</p>
+              </article>
+    </article>
+    `).join('');
+    document.querySelector('#proy-cards').innerHTML = proyectosHTML;
+  });
+
+fetch('/imagenes/certificaciones/certificados.json')
+  .then(response => response.json())
+  .then(certificados => {
+    const proyectosHTML = certificados.map(certificado => `
+    <article class="card cert">
+      <img src="${certificado.imagen}" width="300" alt="previsualizacion del certificado" />
+      <h3>${certificado.nombre}</h3>
+      <a href="${certificado.enlace}" target="_blank">
+        <button class="btncertificados">Ver certificado</button>
+      </a>
+    </article>
+    `).join('');
+    document.querySelector('#cert-cards').innerHTML = proyectosHTML;
+  });
