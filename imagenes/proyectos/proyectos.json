@@ -24,6 +24,14 @@
         "github": "https://github.com/gabyvespasiano/chia-plot-calculator"
     },
     {
+        "nombre": "chia coin plot copy",
+        "descripcion": "La app copia plots de Chia Coin a varios discos de forma eficiente. Procesa una copia por disco para evitar saturar el sistema de entrada/salida.",
+        "stack": "PYTHON",
+        "imagen": "/imagenes/proyectos/chia-coin-plot-copy/preview.png",
+        "test": "https://github.com/gabyvespasiano/chia-coin-plot-copy",
+        "github": "https://github.com/gabyvespasiano/chia-coin-plot-copy"
+    },
+    {
         "nombre": "css sort",
         "descripcion": "Esta aplicación le permite ingresar el código HTML y CSS de su sitio web y organizar automáticamente el CSS en base a los tags HTML, las clases y las ID.",
         "stack": "HTML, CSS, JS",
