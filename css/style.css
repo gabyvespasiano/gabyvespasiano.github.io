@@ -277,6 +277,21 @@ nav.visible {
   text-align: justify;
 }
 
+.github{
+  text-align: center;
+}
+.github a{
+  color: var(--c_blanco);
+}
+.github-logo {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+  fill: #000;
+}
+
 /*RESPONSIVE*/
 @media (max-width: 767px) {
   header .logo {

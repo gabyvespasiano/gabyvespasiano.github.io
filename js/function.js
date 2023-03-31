@@ -135,6 +135,7 @@ fetch('/imagenes/certificaciones/certificados.json')
 
   document.querySelector("#formulario_contacto").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que la página se recargue
+    
     var form = event.target;
     var data = new FormData(form); // Crea un objeto FormData con los datos del formulario
     var xhr = new XMLHttpRequest();
@@ -148,4 +149,5 @@ fetch('/imagenes/certificaciones/certificados.json')
       }
     };
     xhr.send(new URLSearchParams(data)); // Envía los datos del formulario utilizando AJAX
+    alert("estamos procesando su solicitud, por favor espere un momento...")
   });
