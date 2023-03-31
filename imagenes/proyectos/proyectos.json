@@ -4,7 +4,7 @@
         "descripcion": "se realizo el famoso juego de TATETI (3 en linea) online, el juego utiliza una base de datos en Mysql para realizar la conexion entre usuarios, la cual se consulta mendiante PHP y este es llamado por el javascript",
         "stack": "HTML, CSS, JS, PHP, MySQL",
         "imagen": "/imagenes/proyectos/tateti/preview.png",
-        "test": "http://gabyvespa.ar/tateti",
+        "test": "https://gabyvespa.ar/tateti",
         "github": "https://github.com/gabyvespasiano/tateti-online"
     },
     {
