@@ -4,6 +4,8 @@ const navMenu = document.querySelector('nav');
 //console.log(location.host)
  if (location.host.includes("gabyvespa") && location.protocol !== 'https:') {
    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+ }else if (location.host.includes("https://gabyvespasiano.github.io/")){
+   location.replace("https://gabyvespa.ar/");
  }
 
 navButton.addEventListener('click', () => {
@@ -129,4 +131,21 @@ fetch('/imagenes/certificaciones/certificados.json')
     </article>
     `).join('');
     document.querySelector('#cert-cards').innerHTML = proyectosHTML;
+  });
+
+  document.querySelector("#formulario_contacto").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que la página se recargue
+    var form = event.target;
+    var data = new FormData(form); // Crea un objeto FormData con los datos del formulario
+    var xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action, true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var respuesta = xhr.responseText; // Obtiene la respuesta del servidor
+        
+        alert(respuesta); // Muestra la respuesta en un alert
+      }
+    };
+    xhr.send(new URLSearchParams(data)); // Envía los datos del formulario utilizando AJAX
   });
