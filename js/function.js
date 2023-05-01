@@ -2,11 +2,7 @@ const navButton = document.querySelector('.nav-button');
 const navMenu = document.querySelector('nav');
 
 //console.log(location.host)
- if (location.host.includes("gabyvespa") && location.protocol !== 'https:') {
-   location.replace(`https:${location.href.substring(location.protocol.length)}`);
- }else if (location.host.includes("gabyvespasiano.github.io")){
-   location.replace("https://gabyvespa.ar/");
- }
+
 
 navButton.addEventListener('click', () => {
   navMenu.classList.toggle('visible');
